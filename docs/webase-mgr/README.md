@@ -41,19 +41,19 @@
 ### 3.2 拉取代码
 执行命令：
 ```shell
-git clone -b dev-0.7 https://github.com/WeBankFinTech/webase-node-mgr.git
+git clone https://github.com/WeBankFinTech/webase-node-manager.git
 ```
 ### 3.3 编译代码
 进入代码根目录：
 ```shell
-cd webase-node-mgr
+cd webase-node-manager
 ```
 在代码的根目录webase-node-mgr执行构建命令：
 ```shell
 gradle build -x test
 （没有安装gradle  则使用 ./gradlew build -x test）
 ```
-构建完成后，会在根目录webase-node-mgr下生成已编译的代码目录dist。
+构建完成后，会在根目录webase-node-manager下生成已编译的代码目录dist。
 
 
 ### 3.4 数据库初始化
@@ -96,7 +96,7 @@ cd dist/conf
 ```
 修改服务配置：
 ```shell
-修改当前服务（webase-node-mgr）端口：sed -i "s/8080/${your_server_port}/g" application.yml
+修改当前服务（webase-node-manager）端口：sed -i "s/8080/${your_server_port}/g" application.yml
 修改数据库IP：sed -i "s/127.0.0.1/${your_db_ip}/g" application.yml
 修改数据库端口：sed -i "s/3306/${your_db_port}/g" application.yml
 修改数据库名称：sed -i "s/fisco-bcos-data/${your_db_name}/g" application.yml

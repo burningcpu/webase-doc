@@ -2,12 +2,23 @@
 
 WeBASE（WeBank Blockchain Application Software Extension） 是在区块链应用和fisco bcos节点之间搭建的一套通用组件。围绕交易、合约、密钥管理，数据，可视化管理来设计各个模块，开发者可以根据业务所需，选择子系统进行部署。WeBASE屏蔽了区块链底层的复杂度，降低开发者的门槛，大幅提高区块链应用的开发效率，包含节点前置、节点管理、交易链路，数据导出，Web管理平台等子系统。
 
-开发者搭建完fisco bcos节点后，部署WeBASE，基于WeBASE开发区块链应用，将会大幅提升效率。
+WeBASE将区块链应用开发标准化，搭建完fisco bcos节点后，只需按照以下5步流程进行开发即可。
+
+1 部署WeBASE。
+
+2 登录WeBASE管理平台，添加节点信息，私钥信息等。
+
+3 开发智能合约，编译、部署、测试合约。
+
+4 根据所写合约和交易api的格式，发送交易。
+
+5 登录管理平台查看交易详情，查看交易统计信息，在线运维管理。
+
+开发流程请参阅 [使用WeBASE开发区块链应用Step by Step](https://)
 
 ## 整体架构
 完整的部署架构如下，其中webase-front需要和区块链节点同机部署。
 ![[架构图]](../../images/webase/architecture.png)
-
 
 ## 各子系统简介
 **[webase-front](https://github.com/WeBankFinTech/webase-front)**
@@ -35,6 +46,11 @@ WeBASE管理平台
 
 功能简介：托管用户私钥，提供云端签名。
 
+**[webase-codegen-monkey](https://github.com/WeBankFinTech/webase-codegen-monkey)**
+数据导出代码生成工具
+
+功能简介：代码生成工具，通过配置可以生成数据导出的核心代码。
+
 **[webase-collect-bee](https://github.com/WeBankFinTech/webase-collect-bee)**
 数据导出服务
 
@@ -53,14 +69,5 @@ WeBASE所有子系统独立存在，均可独立部署，独立提供服务。
 **可定制**
 前端页面往往带有自身的业务属性，因此WeBASE采用前后端分离的技术，便于开发者基于后端接口定制自己的前端页面。
 
-## 应用开发步骤
-1 部署WeBASE。
 
-2 登录WeBASE管理平台，添加节点信息，私钥信息等。
-
-3 开发智能合约，编译、部署、测试合约。
-
-4 根据所写合约和交易api的格式，发送交易。
-
-5 登录管理平台查看交易详情，查看交易统计信息，在线运维管理
 
