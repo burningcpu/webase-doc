@@ -19,14 +19,6 @@ WEBASE 技术文档
 .. toctree::
    :maxdepth: 3
    
-<<<<<<< HEAD
-   docs/webase/introduction.md
-   docs/webase/install.md
-   docs/webase-console-suit/index.md
-   docs/webase/subsystem.md
-   docs/webase/HelloWorld-StepByStep.md
-   
-=======
    docs/WeBASE/introduction.md
    docs/WeBASE/install.md
    docs/WeBASE-Console-Suit/index.md
@@ -35,7 +27,6 @@ WEBASE 技术文档
 .. 
  docs/WeBASE-Codegen-Monkey/README.md
  docs/WeBASE-Collect-Bee/README.md
->>>>>>> upstream/master
 
  
  
